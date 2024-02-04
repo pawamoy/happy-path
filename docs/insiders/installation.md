@@ -4,7 +4,7 @@ title: Getting started with Insiders
 
 # Getting started with Insiders
 
-*CodeFlow Insiders* is a compatible drop-in replacement for *CodeFlow*,
+*Happy Path Insiders* is a compatible drop-in replacement for *Happy Path*,
 and can be installed similarly using `pip` or `git`.
 Note that in order to access the Insiders  repository,
 you need to [become an eligible sponsor] of @pawamoy on GitHub.
@@ -25,10 +25,10 @@ and [how to use it](https://pawamoy.github.io/pypi-insiders/#usage).
 
 ### with pip (ssh/https)
 
-*CodeFlow Insiders* can be installed with `pip` [using SSH][using ssh]:
+*Happy Path Insiders* can be installed with `pip` [using SSH][using ssh]:
 
 ```bash
-pip install git+ssh://git@github.com/pawamoy-insiders/codeflow.git
+pip install git+ssh://git@github.com/pawamoy-insiders/happy-path.git
 ```
 
   [using ssh]: https://docs.github.com/en/authentication/connecting-to-github-with-ssh
@@ -36,7 +36,7 @@ pip install git+ssh://git@github.com/pawamoy-insiders/codeflow.git
 Or using HTTPS:
 
 ```bash
-pip install git+https://${GH_TOKEN}@github.com/pawamoy-insiders/codeflow.git
+pip install git+https://${GH_TOKEN}@github.com/pawamoy-insiders/happy-path.git
 ```
 
 >? NOTE: **How to get a GitHub personal access token**  
@@ -60,7 +60,7 @@ pip install git+https://${GH_TOKEN}@github.com/pawamoy-insiders/codeflow.git
 
 ### with pip (self-hosted)
 
-Self-hosting the Insiders package makes it possible to depend on *CodeFlow* normally,
+Self-hosting the Insiders package makes it possible to depend on *Happy Path* normally,
 while transparently downloading and installing the Insiders version locally.
 It means that you can specify your dependencies normally, and your contributors without access
 to Insiders will get the public version, while you get the Insiders version on your machine.
@@ -82,7 +82,7 @@ with [Twine]:
   [Artifactory]: https://jfrog.com/help/r/jfrog-artifactory-documentation/pypi-repositories
   [Google Cloud]: https://cloud.google.com/artifact-registry/docs/python
   [pypiserver]: https://pypi.org/project/pypiserver/
-  [Github Releases]: https://github.com/pawamoy-insiders/codeflow/releases
+  [Github Releases]: https://github.com/pawamoy-insiders/happy-path/releases
   [Twine]: https://pypi.org/project/twine/
 
 ```bash
@@ -142,8 +142,8 @@ as it is against our [Terms of use](index.md#terms).**
 >
 > ```bash
 > # clone the repository
-> git clone git@github.com:pawamoy-insiders/codeflow
-> cd codeflow
+> git clone git@github.com:pawamoy-insiders/happy-path
+> cd happy-path
 >
 > # install build
 > pip install --user build
@@ -168,28 +168,28 @@ as it is against our [Terms of use](index.md#terms).**
 >
 >   [pdm]: https://pdm.fming.dev/latest/
 >
-> Now when running `pip install codeflow`,
+> Now when running `pip install happy-path`,
 > or resolving dependencies with PDM,
 > both tools will look into our local index and find the Insiders version.
 > **Remember to update your local index regularly!**
 
 ### with git
 
-Of course, you can use *CodeFlow Insiders* directly from `git`:
+Of course, you can use *Happy Path Insiders* directly from `git`:
 
 ```
-git clone git@github.com:pawamoy-insiders/codeflow
+git clone git@github.com:pawamoy-insiders/happy-path
 ```
 
 When cloning from `git`, the package must be installed:
 
 ```
-pip install -e codeflow
+pip install -e happy-path
 ```
 
 ## Upgrading
 
-When upgrading Insiders, you should always check the version of *CodeFlow*
+When upgrading Insiders, you should always check the version of *Happy Path*
 which makes up the first part of the version qualifier. For example, a version like
 `8.x.x.4.x.x` means that Insiders `4.x.x` is currently based on `8.x.x`.
 

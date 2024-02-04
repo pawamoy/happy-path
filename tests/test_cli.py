@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import pytest
 
-from codeflow import cli, debug
+from happy_path import cli, debug
 
 
 def test_main() -> None:
@@ -21,7 +21,7 @@ def test_show_help(capsys: pytest.CaptureFixture) -> None:
     with pytest.raises(SystemExit):
         cli.main(["-h"])
     captured = capsys.readouterr()
-    assert "codeflow" in captured.out
+    assert "happy-path" in captured.out
 
 
 def test_show_version(capsys: pytest.CaptureFixture) -> None:

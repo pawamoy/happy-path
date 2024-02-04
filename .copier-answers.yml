@@ -9,14 +9,14 @@ copyright_holder: Timothée Mazzucotelli
 copyright_holder_email: dev@pawamoy.fr
 copyright_license: ISC License
 insiders: true
-insiders_repository_name: codeflow
+insiders_repository_name: happy-path
 project_description: Code and data flow visualization tool for Python.
-project_name: CodeFlow
+project_name: Happy Path
 public_release: false
-python_package_command_line_name: codeflow
-python_package_distribution_name: codeflow
-python_package_import_name: codeflow
-repository_name: codeflow
+python_package_command_line_name: happy-path
+python_package_distribution_name: happy-path
+python_package_import_name: happy_path
+repository_name: happy-path
 repository_namespace: pawamoy
 repository_provider: github.com
 

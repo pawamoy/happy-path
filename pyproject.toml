@@ -3,7 +3,7 @@ requires = ["pdm-backend"]
 build-backend = "pdm.backend"
 
 [project]
-name = "codeflow"
+name = "happy-path"
 description = "Code and data flow visualization tool for Python."
 authors = [{name = "Timothée Mazzucotelli", email = "dev@pawamoy.fr"}]
 license = {text = "ISC"}
@@ -30,17 +30,17 @@ classifiers = [
 dependencies = []
 
 [project.urls]
-Homepage = "https://pawamoy.github.io/codeflow"
-Documentation = "https://pawamoy.github.io/codeflow"
-Changelog = "https://pawamoy.github.io/codeflow/changelog"
-Repository = "https://github.com/pawamoy/codeflow"
-Issues = "https://github.com/pawamoy/codeflow/issues"
-Discussions = "https://github.com/pawamoy/codeflow/discussions"
-Gitter = "https://gitter.im/codeflow/community"
+Homepage = "https://pawamoy.github.io/happy-path"
+Documentation = "https://pawamoy.github.io/happy-path"
+Changelog = "https://pawamoy.github.io/happy-path/changelog"
+Repository = "https://github.com/pawamoy/happy-path"
+Issues = "https://github.com/pawamoy/happy-path/issues"
+Discussions = "https://github.com/pawamoy/happy-path/discussions"
+Gitter = "https://gitter.im/happy-path/community"
 Funding = "https://github.com/sponsors/pawamoy"
 
 [project.scripts]
-codeflow = "codeflow.cli:main"
+happy-path = "happy_path.cli:main"
 
 [tool.pdm]
 version = {source = "scm"}
@@ -54,8 +54,8 @@ editable-backend = "editables"
 
 [tool.pdm.dev-dependencies]
 duty = ["duty>=0.10"]
-ci-quality = ["codeflow[duty,docs,quality,typing,security]"]
-ci-tests = ["codeflow[duty,tests]"]
+ci-quality = ["happy-path[duty,docs,quality,typing,security]"]
+ci-tests = ["happy-path[duty,tests]"]
 docs = [
     "black>=23.9",
     "markdown-callouts>=0.3",

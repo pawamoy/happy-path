@@ -10,7 +10,7 @@ Nothing easier!
 Fork and clone the repository, then:
 
 ```bash
-cd codeflow
+cd happy-path
 make setup
 ```
 
@@ -32,7 +32,7 @@ make setup
 
 You now have the dependencies installed.
 
-You can run the application with `pdm run codeflow [ARGS...]`.
+You can run the application with `pdm run happy-path [ARGS...]`.
 
 Run `make help` to see all the available actions!
 

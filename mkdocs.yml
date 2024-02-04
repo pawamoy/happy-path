@@ -1,10 +1,10 @@
-site_name: "CodeFlow"
+site_name: "Happy Path"
 site_description: "Code and data flow visualization tool for Python."
-site_url: "https://pawamoy.github.io/codeflow"
-repo_url: "https://github.com/pawamoy/codeflow"
-repo_name: "pawamoy/codeflow"
+site_url: "https://pawamoy.github.io/happy-path"
+repo_url: "https://github.com/pawamoy/happy-path"
+repo_name: "pawamoy/happy-path"
 site_dir: "site"
-watch: [mkdocs.yml, README.md, CONTRIBUTING.md, CHANGELOG.md, src/codeflow]
+watch: [mkdocs.yml, README.md, CONTRIBUTING.md, CHANGELOG.md, src/happy_path]
 copyright: Copyright &copy; 2024 Timothée Mazzucotelli
 edit_uri: edit/main/docs/
 
@@ -21,7 +21,7 @@ nav:
   - License: license.md
 # defer to gen-files + literate-nav
 - API reference:
-  - CodeFlow: reference/
+  - Happy Path: reference/
 - Development:
   - Contributing: contributing.md
   - Code of Conduct: code_of_conduct.md
@@ -135,7 +135,7 @@ plugins:
           summary: true
 - git-committers:
     enabled: !ENV [DEPLOY, false]
-    repository: pawamoy/codeflow
+    repository: pawamoy/happy-path
 - minify:
     minify_html: !ENV [DEPLOY, false]
 - group:
@@ -152,6 +152,6 @@ extra:
   - icon: fontawesome/brands/twitter
     link: https://twitter.com/pawamoy
   - icon: fontawesome/brands/gitter
-    link: https://gitter.im/codeflow/community
+    link: https://gitter.im/happy-path/community
   - icon: fontawesome/brands/python
-    link: https://pypi.org/project/codeflow/
+    link: https://pypi.org/project/happy-path/

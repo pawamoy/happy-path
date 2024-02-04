@@ -56,7 +56,7 @@ def _interpreter_name_version() -> tuple[str, str]:
     return "", "0.0.0"
 
 
-def get_version(dist: str = "codeflow") -> str:
+def get_version(dist: str = "happy-path") -> str:
     """Get version of the given distribution.
 
     Parameters:
@@ -78,8 +78,8 @@ def get_debug_info() -> Environment:
         Environment information.
     """
     py_name, py_version = _interpreter_name_version()
-    packages = ["codeflow"]
-    variables = ["PYTHONPATH", *[var for var in os.environ if var.startswith("CODEFLOW")]]
+    packages = ["happy-path"]
+    variables = ["PYTHONPATH", *[var for var in os.environ if var.startswith("HAPPY_PATH")]]
     return Environment(
         interpreter_name=py_name,
         interpreter_version=py_version,

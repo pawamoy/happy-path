@@ -25,7 +25,7 @@ jobs:
       uses: actions/upload-artifact@v3
       if: github.repository_owner == 'pawamoy-insiders'
       with:
-        name: codeflow-insiders
+        name: happy-path-insiders
         path: ./dist/*
     - name: Install git-changelog
       if: github.repository_owner != 'pawamoy-insiders'

@@ -5,11 +5,11 @@
 # You might be tempted to import things from `__main__` later,
 # but that will cause problems: the code will get executed twice:
 #
-# - When you run `python -m codeflow` python will execute
+# - When you run `python -m happy_path` python will execute
 #   `__main__.py` as a script. That means there won't be any
-#   `codeflow.__main__` in `sys.modules`.
+#   `happy_path.__main__` in `sys.modules`.
 # - When you import `__main__` it will get executed again (as a module) because
-#   there's no `codeflow.__main__` in `sys.modules`.
+#   there's no `happy_path.__main__` in `sys.modules`.
 
 from __future__ import annotations
 
@@ -17,7 +17,7 @@ import argparse
 import sys
 from typing import Any
 
-from codeflow import debug
+from happy_path import debug
 
 
 class _DebugInfo(argparse.Action):
@@ -35,7 +35,7 @@ def get_parser() -> argparse.ArgumentParser:
     Returns:
         An argparse parser.
     """
-    parser = argparse.ArgumentParser(prog="codeflow")
+    parser = argparse.ArgumentParser(prog="happy-path")
     parser.add_argument("-V", "--version", action="version", version=f"%(prog)s {debug.get_version()}")
     parser.add_argument("--debug-info", action=_DebugInfo, help="Print debug information.")
     return parser
@@ -44,7 +44,7 @@ def get_parser() -> argparse.ArgumentParser:
 def main(args: list[str] | None = None) -> int:
     """Run the main program.
 
-    This function is executed when you type `codeflow` or `python -m codeflow`.
+    This function is executed when you type `happy-path` or `python -m happy_path`.
 
     Parameters:
         args: Arguments passed from the command line.

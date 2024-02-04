@@ -50,7 +50,7 @@ PASTE TRACEBACK HERE
      redacting sensitive information. -->
 
 ```bash
-codeflow --debug-info  # | xclip -selection clipboard
+happy-path --debug-info  # | xclip -selection clipboard
 ```
 
 PASTE OUTPUT HERE

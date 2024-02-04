@@ -142,9 +142,9 @@ def check_api(ctx: Context) -> None:
 
     griffe_check = lazy(g_check, name="griffe.check")
     ctx.run(
-        griffe_check("codeflow", search_paths=["src"], color=True),
+        griffe_check("happy_path", search_paths=["src"], color=True),
         title="Checking for API breaking changes",
-        command="griffe check -ssrc codeflow",
+        command="griffe check -ssrc happy_path",
         nofail=True,
     )
 
@@ -198,8 +198,8 @@ def docs_deploy(ctx: Context) -> None:
         if not insiders:
             ctx.run(lambda: False, title="Not deploying docs without Material for MkDocs Insiders!")
         origin = ctx.run("git config --get remote.origin.url", silent=True)
-        if "pawamoy-insiders/codeflow" in origin:
-            ctx.run("git remote add upstream git@github.com:pawamoy/codeflow", silent=True, nofail=True)
+        if "pawamoy-insiders/happy-path" in origin:
+            ctx.run("git remote add upstream git@github.com:pawamoy/happy-path", silent=True, nofail=True)
             ctx.run(
                 mkdocs.gh_deploy(remote_name="upstream", force=True),
                 title="Deploying documentation",
@@ -235,7 +235,7 @@ def release(ctx: Context, version: str) -> None:
         version: The new version number to use.
     """
     origin = ctx.run("git config --get remote.origin.url", silent=True)
-    if "pawamoy-insiders/codeflow" in origin:
+    if "pawamoy-insiders/happy-path" in origin:
         ctx.run(
             lambda: False,
             title="Not releasing from insiders repository (do that from public repo instead!)",

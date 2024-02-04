@@ -1,6 +1,6 @@
 # Insiders
 
-*CodeFlow* follows the **sponsorware** release strategy, which means
+*Happy Path* follows the **sponsorware** release strategy, which means
 that new features are first exclusively released to sponsors as part of
 [Insiders][insiders]. Read on to learn [what sponsorships achieve][sponsorship],
 [how to become a sponsor][sponsors] to get access to Insiders,
@@ -8,7 +8,7 @@ and [what's in it for you][features]!
 
 ## What is Insiders?
 
-*CodeFlow Insiders* is a private fork of *CodeFlow*, hosted as
+*Happy Path Insiders* is a private fork of *Happy Path*, hosted as
 a private GitHub repository. Almost[^1] [all new features][features]
 are developed as part of this fork, which means that they are immediately
 available to all eligible sponsors, as they are made collaborators of this
@@ -17,11 +17,11 @@ repository.
   [^1]:
     In general, every new feature is first exclusively released to sponsors, but
     sometimes upstream dependencies enhance
-    existing features that must be supported by *CodeFlow*.
+    existing features that must be supported by *Happy Path*.
 
 Every feature is tied to a [funding goal][funding] in monthly subscriptions. When a
 funding goal is hit, the features that are tied to it are merged back into
-*CodeFlow* and released for general availability, making them available
+*Happy Path* and released for general availability, making them available
 to all users. Bugfixes are always released in tandem.
 
 Sponsorships start as low as [**$10 a month**][sponsors].[^2]
@@ -44,7 +44,7 @@ The biggest bottleneck in Open Source is time.[^3]
   [^3]:
     Making an Open Source project sustainable is exceptionally hard: maintainers
     burn out, projects are abandoned. That's not great and very unpredictable.
-    The sponsorware model ensures that if you decide to use *CodeFlow*,
+    The sponsorware model ensures that if you decide to use *Happy Path*,
     you can be sure that bugs are fixed quickly and new features are added
     regularly.
 
@@ -128,7 +128,7 @@ You can cancel your sponsorship anytime.[^5]
 
 <small>
   If you sponsor publicly, you're automatically added here with a link to
-  your profile and avatar to show your support for *CodeFlow*.
+  your profile and avatar to show your support for *Happy Path*.
   Alternatively, if you wish to keep your sponsorship private, you'll be a
   silent +1. You can select visibility during checkout and change it
   afterwards.
@@ -168,10 +168,10 @@ for goal in goals.values():
 ### Compatibility
 
 > We're building an open source project and want to allow outside collaborators
-to use *CodeFlow* locally without having access to Insiders.
+to use *Happy Path* locally without having access to Insiders.
 Is this still possible?
 
-Yes. Insiders is compatible with *CodeFlow*. Almost all new features
+Yes. Insiders is compatible with *Happy Path*. Almost all new features
 and configuration options are either backward-compatible or implemented behind
 feature flags. Most Insiders features enhance the overall experience,
 though while these features add value for the users of your project, they
@@ -193,10 +193,10 @@ If you have any problems or further questions, please reach out to dev@pawamoy.f
 ### Terms
 
 > Are we allowed to use Insiders under the same terms and conditions as
-*CodeFlow*?
+*Happy Path*?
 
-Yes. Whether you're an individual or a company, you may use *CodeFlow
-Insiders* precisely under the same terms as *CodeFlow*, which are given
+Yes. Whether you're an individual or a company, you may use *Happy Path
+Insiders* precisely under the same terms as *Happy Path*, which are given
 by the [ISC License][license]. However, we kindly ask you to respect our
 **fair use policy**:
 

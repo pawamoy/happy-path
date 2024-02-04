@@ -1,4 +1,4 @@
-"""Entry-point module, in case you use `python -m codeflow`.
+"""Entry-point module, in case you use `python -m happy_path`.
 
 Why does this file exist, and why `__main__`? For more info, read:
 
@@ -8,7 +8,7 @@ Why does this file exist, and why `__main__`? For more info, read:
 
 import sys
 
-from codeflow.cli import main
+from happy_path.cli import main
 
 if __name__ == "__main__":
     sys.exit(main(sys.argv[1:]))

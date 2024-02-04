@@ -1,4 +1,4 @@
-"""CodeFlow package.
+"""Happy Path package.
 
 Code and data flow visualization tool for Python.
 """

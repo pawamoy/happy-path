@@ -1,4 +1,4 @@
-"""Tests suite for `codeflow`."""
+"""Tests suite for `happy_path`."""
 
 from pathlib import Path
 

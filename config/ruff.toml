@@ -98,7 +98,7 @@ docstring-quotes = "double"
 ban-relative-imports = "all"
 
 [isort]
-known-first-party = ["codeflow"]
+known-first-party = ["happy_path"]
 
 [pydocstyle]
 convention = "google"
