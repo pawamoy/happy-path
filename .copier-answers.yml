@@ -1,0 +1,22 @@
+# Changes here will be overwritten by Copier
+_commit: 1.2.0
+_src_path: gh:pawamoy/copier-pdm
+author_email: dev@pawamoy.fr
+author_fullname: Timothée Mazzucotelli
+author_username: pawamoy
+copyright_date: '2024'
+copyright_holder: Timothée Mazzucotelli
+copyright_holder_email: dev@pawamoy.fr
+copyright_license: ISC License
+insiders: true
+insiders_repository_name: codeflow
+project_description: Code and data flow visualization tool for Python.
+project_name: CodeFlow
+public_release: false
+python_package_command_line_name: codeflow
+python_package_distribution_name: codeflow
+python_package_import_name: codeflow
+repository_name: codeflow
+repository_namespace: pawamoy
+repository_provider: github.com
+
