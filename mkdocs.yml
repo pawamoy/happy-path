@@ -91,7 +91,11 @@ markdown_extensions:
 - pymdownx.snippets:
     base_path: [!relative $config_dir]
     check_paths: true
-- pymdownx.superfences
+- pymdownx.superfences:
+    custom_fences:
+      - name: mermaid
+        class: mermaid
+        format: !!python/name:pymdownx.superfences.fence_code_format
 - pymdownx.tabbed:
     alternate_style: true
     slugify: !!python/object/apply:pymdownx.slugs.slugify
@@ -121,6 +125,8 @@ plugins:
           docstring_options:
             ignore_init_summary: true
           docstring_section_style: list
+          extensions:
+          - griffe_typingdoc
           filters: ["!^_"]
           heading_level: 1
           inherited_members: true

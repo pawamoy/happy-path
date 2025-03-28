@@ -9,7 +9,9 @@ from happy_path import cli, debug
 
 def test_main() -> None:
     """Basic CLI test."""
-    assert cli.main([]) == 0
+    with pytest.raises(SystemExit) as exc_info:
+        cli.main([])
+    assert exc_info.value.code == 2
 
 
 def test_show_help(capsys: pytest.CaptureFixture) -> None:

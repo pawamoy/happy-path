@@ -1,6 +1,6 @@
 # Changes here will be overwritten by Copier
-_commit: 1.2.0
-_src_path: gh:pawamoy/copier-pdm
+_commit: 1.2.8
+_src_path: gh:pawamoy/copier-uv
 author_email: dev@pawamoy.fr
 author_fullname: Timothée Mazzucotelli
 author_username: pawamoy
@@ -9,6 +9,7 @@ copyright_holder: Timothée Mazzucotelli
 copyright_holder_email: dev@pawamoy.fr
 copyright_license: ISC License
 insiders: true
+insiders_email: dev@pawamoy.fr
 insiders_repository_name: happy-path
 project_description: Code and data flow visualization tool for Python.
 project_name: Happy Path
