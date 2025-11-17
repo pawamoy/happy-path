@@ -1,5 +1,8 @@
 # Happy Path
 
+> [!WARNING]  
+> This experimental project is now being worked on publicly. The Insiders repository will be removed on November 1, 2026.
+
 [![documentation](https://img.shields.io/badge/docs-mkdocs-708FCC.svg?style=flat)](https://pawamoy.github.io/happy-path/)
 [![gitpod](https://img.shields.io/badge/gitpod-workspace-708FCC.svg?style=flat)](https://gitpod.io/#https://github.com/pawamoy/happy-path)
 [![gitter](https://badges.gitter.im/join%20chat.svg)](https://app.gitter.im/#/room/#happy-path:gitter.im)
